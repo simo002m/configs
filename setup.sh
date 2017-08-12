@@ -41,4 +41,4 @@ apt-get install -y idle3
 apt-get install -y emacs
 apt-get install -y leafpad
 apt-get install -y ipython3
-
+apt-get install -y gcolor2
