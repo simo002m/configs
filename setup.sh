@@ -24,6 +24,7 @@ apt-get install -y python3-tk
 apt-get install -y openssh-server
 apt-get install -y mate-terminal
 apt-get install -y plank
+apt-get install -y albert 
 apt-get install -y dmenu
 apt-get install -y virtualbox
 
