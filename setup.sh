@@ -18,28 +18,12 @@ git clone https://github.com/simo002m/mfc.git ~/repos/mfc_repo
 
 git clone https://github.com/LinxGem33/Plank-Themes.git ~/
 
-apt-get install -y vim
-apt-get install -y tmux 
-apt-get install -y python3-tk
-apt-get install -y plank
-apt-get install -y mate-terminal
-apt-get install -y openssh-server
-apt-get install -y albert 
-apt-get install -y dmenu
-apt-get install -y virtualbox
-
 apt-add-repository ppa:noobslab/macbuntu
 apt-get update
 
-sudo apt-get install -y macbuntu-os-icons-lts-v7
-sudo apt-get install -y macbuntu-os-ithemes-lts-v7
-sudo apt-get install -y macbuntu-os-plank-theme-lts-v7
+programs=(vim tmux python3-tk plank mate-terminal albert plank openssh-server virtualbox dmenu macbuntu-os-icons-lts-v7 macbuntu-os-ithemes-lts-v7 macbuntu-os-plank-theme-lts-v7 links2 nsnake arduino idle3 emacs leafpad ipython3 gcolor2)
 
-apt-get install -y links2
-apt-get install -y nsnake
-apt-get install -y arduino
-apt-get install -y idle3
-apt-get install -y emacs
-apt-get install -y leafpad
-apt-get install -y ipython3
-apt-get install -y gcolor2
+for ((i=0; i < ${#programs[*]}; i++))
+do
+	sudo apt-get install -y $i
+done
