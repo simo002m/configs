@@ -21,9 +21,9 @@ git clone https://github.com/LinxGem33/Plank-Themes.git ~/
 apt-get install -y vim
 apt-get install -y tmux 
 apt-get install -y python3-tk
-apt-get install -y openssh-server
-apt-get install -y mate-terminal
 apt-get install -y plank
+apt-get install -y mate-terminal
+apt-get install -y openssh-server
 apt-get install -y albert 
 apt-get install -y dmenu
 apt-get install -y virtualbox
