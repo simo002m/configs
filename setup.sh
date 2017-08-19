@@ -21,7 +21,7 @@ git clone https://github.com/LinxGem33/Plank-Themes.git ~/
 apt-add-repository ppa:noobslab/macbuntu
 apt-get update
 
-programs=(vim tmux python3-tk plank mate-terminal albert plank openssh-server virtualbox dmenu macbuntu-os-icons-lts-v7 macbuntu-os-ithemes-lts-v7 macbuntu-os-plank-theme-lts-v7 links2 nsnake arduino idle3 emacs leafpad ipython3 gcolor2)
+programs=(vim tmux python3-tk python3-pip plank mate-terminal albert plank openssh-server virtualbox dmenu macbuntu-os-icons-lts-v7 macbuntu-os-ithemes-lts-v7 macbuntu-os-plank-theme-lts-v7 links2 nsnake arduino idle3 emacs leafpad ipython3 gcolor2)
 
 for ((i=0; i < ${#programs[*]}; i++))
 do
