@@ -1,5 +1,7 @@
 set tabstop=4
 
+syntax on
+
 set number
 highlight linenr ctermfg=green
 
