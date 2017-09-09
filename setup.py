@@ -2,6 +2,13 @@ from subprocess import call
 
 confirm_latex = input("texlive-full is quite a big package, do you want to install it or not? (yes/no) ")
 
+call(["wget", "https://github.com/LinuxGem33/Osx-Arc-Darker/releases/download/v1.4.3/osx-arc-collection_1.4.3_amd64.deb"])
+
+call(["sudo","dpkg","-i","osx-arc-collection_1.4.3_amd64.deb"])
+
+call(["rm","*.deb"])
+
+
 call(["mkdir", "~/repos"])
 
 # directories for 'homemade' repos
