@@ -163,7 +163,6 @@ bindsym $mod+Ctrl+Up resize grow height 1 px or 1 ppt
 bindsym $mod+Ctrl+Down resize shrink height 1 px or 1 ppt
 bindsym $mod+Ctrl+Left resize grow width 1 px or 1 ppt
 
-
 # Set a wallpaper
 exec --no-startup-id feh --bg-scale ~/.wallpapers/Ubuntu-Mate-Warm-no-logo.jpg
 
@@ -181,5 +180,8 @@ bindsym XF86AudioPlay exec playerctl play-pause
 bindsym XF86AudioNext exec playerctl next 
 bindsym XF86AudioPrev exec playerctl previous
 
-# Create a custom shortcut for logging out/running i3lock
+# Create a shortcut for logging out/running i3lock
 bindsym $mod+shift+x exec i3lock-fancy
+
+# Create a shortcut for launching pulseaudio
+bindsym Mod1+Control+p exec pavucontrol
