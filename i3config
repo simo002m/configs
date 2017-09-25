@@ -185,3 +185,14 @@ bindsym $mod+shift+x exec i3lock-fancy
 
 # Create a shortcut for launching pulseaudio
 bindsym Mod1+Control+p exec pavucontrol
+
+
+#==i3-gaps===
+for_window [class="^.*"] border pixel 0
+
+gaps inner 10
+gaps outer 5
+
+bindsym $mod+Mod1+Up gaps inner all plus 5
+bindsym $mod+Mod1+Down gaps inner all minus 5
+
