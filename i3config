@@ -190,13 +190,16 @@ bindsym Mod1+Control+p exec pavucontrol
 
 
 #==i3-gaps===
-for_window [class="^.*"] border pixel 3 
+for_window [class="^.*"] border pixel 2 
 
 gaps inner 10
 gaps outer 5
 
 bindsym $mod+Mod1+Up gaps inner all plus 5
 bindsym $mod+Mod1+Down gaps inner all minus 5
+
+bindsym Control+Mod1+Up gaps outer all plus 5
+bindsym Control+Mod1+Down gaps outer all minus 5
 #============
 
 exec polybar example
