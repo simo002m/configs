@@ -2,4 +2,5 @@ URxvt.font: xft:monospace:size=12
 URxvt.foreground: white
 URxvt.background: #03181D
 
-URxvt.scrollBar: False 
+URxvt.scrollBar: false
+URxvt.transparent: true

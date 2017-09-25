@@ -202,4 +202,5 @@ bindsym Control+Mod1+Up gaps outer all plus 5
 bindsym Control+Mod1+Down gaps outer all minus 5
 #============
 
+exec compton
 exec polybar example
