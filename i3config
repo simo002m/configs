@@ -178,14 +178,15 @@ bindsym XF86AudioPlay exec playerctl play-pause
 bindsym XF86AudioNext exec playerctl next 
 bindsym XF86AudioPrev exec playerctl previous
 
-#---Custom shortcuts---
+#===Custom shortcuts===
 
 # Create a shortcut for logging out/running i3lock
 bindsym $mod+shift+x exec i3lock-fancy
 
-bindsym Mod1+Control+p exec pavucontrol
-bindsym $mod+d exec rofi -show run 
-#----------------------
+bindsym Mod1+$mod+p exec pavucontrol
+bindsym Mod1+$mod+f exec firefox
+bindsym $mod+d exec rofi -show run
+#=======================
 
 
 #==i3-gaps===
