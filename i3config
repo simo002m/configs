@@ -162,7 +162,7 @@ bindsym $mod+Ctrl+Down resize shrink height 1 px or 1 ppt
 bindsym $mod+Ctrl+Left resize grow width 1 px or 1 ppt
 
 # Set a wallpaper
-exec --no-startup-id feh --bg-scale ~/.wallpapers/Ubuntu-Mate-Warm-no-logo.jpg
+exec --no-startup-id feh --bg-scale ~/.wallpapers/Landscapes/seacliffs.jpg
 
 # Light intensity
 bindsym XF86MonBrightnessUp exec xbacklight +5
@@ -204,4 +204,3 @@ bindsym Control+Mod1+Down gaps outer all minus 5
 
 exec compton
 exec polybar example
-
