@@ -183,8 +183,8 @@ bindsym XF86AudioPrev exec playerctl previous
 # Create a shortcut for logging out/running i3lock
 bindsym $mod+shift+x exec i3lock-fancy
 
-bindsym Mod1+$mod+p exec pavucontrol
-bindsym Mod1+$mod+f exec firefox
+bindsym $mod+Mod1+p exec pavucontrol
+bindsym $mod+Mod1+f exec firefox
 bindsym $mod+d exec rofi -show run
 #=======================
 
@@ -204,3 +204,4 @@ bindsym Control+Mod1+Down gaps outer all minus 5
 
 exec compton
 exec polybar example
+
