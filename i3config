@@ -185,7 +185,7 @@ bindsym $mod+shift+x exec i3lock-fancy
 
 bindsym $mod+Mod1+p exec pavucontrol
 bindsym $mod+Mod1+f exec firefox
-bindsym $mod+d exec rofi -show run
+bindsym $mod+d exec rofi -show run -hide-scrollbar -lines 1
 #=======================
 
 
