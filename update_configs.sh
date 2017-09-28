@@ -9,7 +9,6 @@ rm ~/configs/setup.py
 cp ~/.config/i3/config ~/configs/i3config
 cp ~/.config/polybar/config ~/configs/polybar_config
 cp ~/.Xresources ~/configs/Xresources
-cp ~/.config/.vimrc ~/.vimrc
-cp ~/.config/.bashrc ~/.bashrc
-cp ~/.config/.tmux.conf ~/.tmux.conf
-cp ~/.config/.setup.py
+cp ~/.vimrc ~/.vimrc
+cp ~/.bashrc ~/.bashrc
+cp ~/.tmux.conf ~/.tmux.conf
