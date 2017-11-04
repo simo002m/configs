@@ -1,9 +1,11 @@
 set tabstop=4
 
 syntax on
+highlight linenr ctermfg=green
+
+colorscheme asmdev
 
 set number
-highlight linenr ctermfg=green
 
 filetype plugin indent on
 
@@ -11,7 +13,12 @@ autocmd FileType python map <F5> :w !python3 <CR>
 autocmd FileType sh map <F5> :w !bash <CR>
 autocmd FileType tex map <F5> :w !pdflatex % <CR>
 
-set laststatus=0
+"Start of the vim-plug manager
+call plug#begin()
+	
+		Plug 'scrooloose/nerdtree'
+		Plug 'flazz/vim-colorschemes'
+		Plug 'valloric/youcompleteme'
 
-"For windows
-set backspace=2
+call plug#end()
+"End vim-plug manager
