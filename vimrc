@@ -5,6 +5,9 @@ highlight linenr ctermfg=green
 
 colorscheme asmdev
 
+"Colors for autocompletetion
+highlight Pmenu ctermfg=9 ctermbg=0
+
 set number
 
 filetype plugin indent on
