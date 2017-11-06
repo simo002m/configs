@@ -1,5 +1,5 @@
 !===Urxvt===
-URxvt.font: xft:monospace:size=12
+URxvt.font: xft:monospace:size=14
 URxvt.foreground: white
 URxvt.background: #03181D
 
