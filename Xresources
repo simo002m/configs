@@ -5,22 +5,26 @@ URxvt.background: #03181D
 
 URxvt.scrollBar: false
 
+xterm.dynamicColors: true
+urxvt.dynamicColors: on
+
 URxvt.transparent: true
 URxvt.shading: 50
 !===========
 
-
-! ---------------------------------------------
-! ROFI Color theme
-! Copyright: 2017 leofa
-! ---------------------------------------------
-! "Color scheme for normal row" Set from: File
-rofi.color-normal:                   argb:0383c4a, #c4cbd4, argb:96404552, #4084d6, #f9f9f9
-! "Color scheme for urgent row" Set from: File
-rofi.color-urgent:                   argb:02d303b, #cc6666, argb:e52d303b, #a54242, #f9f9f9
-! "Color scheme for active row" Set from: File
-rofi.color-active:                   argb:02d303b, #b5bd68, argb:e42d303b, #8c9440, #f9f9f9
-! "Color scheme window" Set from: File
-rofi.color-window:                   argb:f22d303b, #7c8389, #1d1f21
-! "Separator style (none, dash, solid)" Set from: XResources
-rofi.separator-style:                solid
+URxvt*color0: #2b2b2b
+URxvt*color1: #cc9393
+URxvt*color2: #7f9f7f
+URxvt*color3: #d0bf8f
+URxvt*color4: #6ca0a3
+URxvt*color5: #dc8cc3
+URxvt*color6: #93e0e3
+URxvt*color7: #dcdccc
+URxvt*color8: #000000
+URxvt*color9: #dca3a3
+URxvt*color10: #bfebbf
+URxvt*color11: #f0dfaf
+URxvt*color12: #8cd0d3
+URxvt*color13: #dc8cc3
+URxvt*color14: #93e0e3
+URxvt*color15: #ffffff
