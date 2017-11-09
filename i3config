@@ -29,8 +29,8 @@ font pango:monospace 8
 # Use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod
 
-# start a terminal(rxvt-unicode/urxvt)
-bindsym $mod+Return exec urxvt
+# start a terminal
+bindsym $mod+Return exec mate-terminal 
 
 # kill focused window
 bindsym $mod+Shift+q kill
@@ -162,7 +162,7 @@ bindsym $mod+Ctrl+Down resize shrink height 1 px or 1 ppt
 bindsym $mod+Ctrl+Left resize grow width 1 px or 1 ppt
 
 # Set a wallpaper
-exec --no-startup-id feh --bg-scale ~/wallpapers/Landscapes/sea_cliffs.jpg
+exec --no-startup-id feh --bg-scale ~/Wallpapers/tower.jpg
 
 # Light intensity
 bindsym XF86MonBrightnessUp exec xbacklight +5
@@ -181,12 +181,13 @@ bindsym XF86AudioPrev exec playerctl previous
 #===Custom shortcuts===
 
 # Create a shortcut for logging out/running i3lock
-bindsym $mod+shift+x exec i3lock-fancy
+bindsym $mod+shift+x exec i3lock --clock -i Wallpapers/tower.png --timesize=40 --radius 100 --keyhlcolor=52002F99 --ringcolor=51003099 --insidecolor=00000000 --linecolor=00000000 --ringvercolor=05253099 --insidevercolor=05253099 --insidewrongcolor=ED423899 --bshlcolor=ED423899
 
 bindsym $mod+Mod1+p exec pavucontrol
 bindsym $mod+Mod1+r exec rhythmbox 
 bindsym $mod+Mod1+f exec firefox
-bindsym $mod+d exec rofi -show run -hide-scrollbar -lines 1
+
+bindsym $mod+d exec rofi -show run -hide-scrollbar -lines 5 -width 40 -theme /usr/share/rofi/themes/ArcDarkTransparent.rasi 
 #=======================
 
 
@@ -205,3 +206,9 @@ bindsym Control+Mod1+Down gaps outer current minus 5
 
 exec compton -b
 exec polybar example
+
+# Lock after timeout
+exec --no-startup-id "~/.i3/autolock"
+
+# Lock on suspend:
+exec --no-startup-id "xss-lock -- i3lock --clock -i Wallpapers/tower.png --timesize=40 --radius 100 --keyhlcolor=52002F99 --ringcolor=51003099 --insidecolor=00000000 --linecolor=00000000 --ringvercolor=05253099 --insidevercolor=05253099 --insidewrongcolor=ED423899 --bshlcolor=ED423899"
