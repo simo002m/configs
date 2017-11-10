@@ -181,13 +181,19 @@ bindsym XF86AudioPrev exec playerctl previous
 #===Custom shortcuts===
 
 # Create a shortcut for logging out/running i3lock
-bindsym $mod+shift+x exec i3lock --clock -i Wallpapers/tower.png --timesize=40 --radius 100 --keyhlcolor=52002F99 --ringcolor=51003099 --insidecolor=00000000 --linecolor=00000000 --ringvercolor=05253099 --insidevercolor=05253099 --insidewrongcolor=ED423899 --bshlcolor=ED423899
+bindsym $mod+shift+x exec i3lock --clock -i Wallpapers/tower.png --timesize=40 --radius 100 --keyhlcolor=52002F99 --ringcolor=51003099 --insidecolor=00000000 --linecolor=00000000 --ringvercolor=05253099 --insidevercolor=00000000 --insidewrongcolor=00000000 --bshlcolor=ED423899
 
 bindsym $mod+Mod1+p exec pavucontrol
 bindsym $mod+Mod1+r exec rhythmbox 
 bindsym $mod+Mod1+f exec firefox
 
-bindsym $mod+d exec rofi -show run -hide-scrollbar -lines 5 -width 40 -theme /usr/share/rofi/themes/ArcDarkTransparent.rasi 
+bindsym $mod+d exec rofi -show run -hide-scrollbar -lines 5 -width 40 -theme /usr/share/rofi/themes/ArcDarkTransparent.rasi
+
+bindsym Mod1+space exec rofi -show drun -hide-scrollbar -lines 5 -width 40 -theme /usr/share/rofi/themes/ArcDarkTransparent.rasi
+
+bindsym Mod1+w exec rofi -show window -hide-scrollbar -lines 5 -width 40 -theme /usr/share/rofi/themes/ArcDarkTransparent.rasi
+
+bindsym $mod+Shift+p exec killall polybar && polybar example  
 #=======================
 
 
@@ -211,4 +217,4 @@ exec polybar example
 exec --no-startup-id "~/.i3/autolock"
 
 # Lock on suspend:
-exec --no-startup-id "xss-lock -- i3lock --clock -i Wallpapers/tower.png --timesize=40 --radius 100 --keyhlcolor=52002F99 --ringcolor=51003099 --insidecolor=00000000 --linecolor=00000000 --ringvercolor=05253099 --insidevercolor=05253099 --insidewrongcolor=ED423899 --bshlcolor=ED423899"
+exec --no-startup-id "xss-lock -- i3lock --clock -i Wallpapers/tower.png --timesize=40 --radius 100 --keyhlcolor=52002F99 --ringcolor=51003099 --insidecolor=00000000 --linecolor=00000000 --ringvercolor=05253099 --insidevercolor=00000000 --insidewrongcolor=00000000 --bshlcolor=ED423899"
