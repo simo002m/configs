@@ -113,8 +113,7 @@
                 <triggerbutton index="2">
                     <slots>
                         <slot>
-                            <code>1</code>
-                            <mode>mousebutton</mode>
+                            <mode>keyboard</mode>
                         </slot>
                     </slots>
                 </triggerbutton>
@@ -154,6 +153,7 @@
                 </slots>
             </button>
             <button index="4">
+                <toggle>true</toggle>
                 <slots>
                     <slot>
                         <code>0x1000000</code>
@@ -164,8 +164,8 @@
             <button index="10">
                 <slots>
                     <slot>
-                        <code>0x1000002b</code>
-                        <mode>keyboard</mode>
+                        <code>1</code>
+                        <mode>mousebutton</mode>
                     </slot>
                 </slots>
             </button>
