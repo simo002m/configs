@@ -117,6 +117,7 @@
                 <triggerbutton index="2">
                     <slots>
                         <slot>
+                            <code>0x20</code>
                             <mode>keyboard</mode>
                         </slot>
                     </slots>
