@@ -1,4 +1,16 @@
-set tabstop=4
+"Start of the vim-plug manager
+call plug#begin()
+	
+		Plug 'scrooloose/nerdtree'
+		Plug 'flazz/vim-colorschemes'
+		Plug 'valloric/youcompleteme'
+		Plug 'nathanaelkane/vim-indent-guides'
+
+call plug#end()
+"End vim-plug manager
+
+
+set tabstop=4 softtabstop=4 shiftwidth=4 noexpandtab
 
 syntax on
 highlight linenr ctermfg=green
@@ -14,14 +26,5 @@ filetype plugin indent on
 
 autocmd FileType python map <F5> :w !python3 <CR>
 autocmd FileType sh map <F5> :w !bash <CR>
-autocmd FileType tex map <F5> :w !pdflatex % <CR>
+autocmd FileType tex map  <F5> :w !pdflatex % <CR>
 
-"Start of the vim-plug manager
-call plug#begin()
-	
-		Plug 'scrooloose/nerdtree'
-		Plug 'flazz/vim-colorschemes'
-		Plug 'valloric/youcompleteme'
-
-call plug#end()
-"End vim-plug manager
