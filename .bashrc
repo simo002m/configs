@@ -125,3 +125,9 @@ if [ -x /usr/bin/mint-fortune ]; then
 fi
 
 alias youtube-dl-mp3="youtube-dl --extract-audio --audio-format mp3"
+
+alias pbcopy="xclip -selection clipboard" # copy to clipboard, ctrl+c, ctrl+shift+c
+alias pbpaste="xclip -selection clipboard -o" # paste from clipboard, ctrl+v, ctrl+shift+v
+alias pbselect="xclip -selection primary -o" # paste from highlight, middle click, shift+insert
+
+alias tmux="TERM=screen-256color-bce tmux"
