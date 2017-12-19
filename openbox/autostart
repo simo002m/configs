@@ -1,0 +1,3 @@
+feh --bg-scale ~/Wallpapers/material-mountains.jpg
+compton -b
+tint2

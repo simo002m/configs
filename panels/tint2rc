@@ -6,8 +6,8 @@
 # ID 1
 rounded = 0
 border_width = 2
-background_color = #003F55 255
-border_color = #003F55 255
+background_color = #053a4d 255
+border_color = #053a4d 255
 
 # ID 2
 rounded = 0
@@ -24,7 +24,7 @@ border_color = #FFFFFF 68
 # Panel
 panel_monitor = all
 panel_position = top center horizontal
-panel_size = 100% 40
+panel_size = 100% 30
 panel_margin = 0 0
 panel_padding = 7 0 7
 panel_dock = 0
@@ -80,9 +80,20 @@ systray_background_id = 0
 systray_icon_size = 16
 systray_icon_asb = 70 0 0
 
+# Battery
+battery = 1
+battery_low_status = 10
+battery_low_cmd = notify-send "battery low"
+battery_hide = 98
+bat1_font = sans 8
+bat2_font = sans 6
+battery_font_color = #FFFFFF 74
+battery_padding = 1 0
+battery_background_id = 0
+
 # Clock
 time1_format = %H:%M
-time1_font = sans 14
+time1_font = sans 12
 time2_format = %A %d %B
 time2_font = sans 6
 clock_font_color = #FFFFFF 74
@@ -103,16 +114,5 @@ mouse_middle = none
 mouse_right = close
 mouse_scroll_up = toggle
 mouse_scroll_down = iconify
-
-# Battery
-battery = 0
-battery_low_status = 10
-battery_low_cmd = notify-send "battery low"
-battery_hide = 98
-bat1_font = sans 8
-bat2_font = sans 6
-battery_font_color = #FFFFFF 74
-battery_padding = 1 0
-battery_background_id = 0
 
 # End of config
