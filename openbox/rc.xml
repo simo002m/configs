@@ -176,25 +176,21 @@
     <moveButton>Middle</moveButton>
     <!-- 'Left', 'Middle', 'Right' -->
   </dock>
-  
   <keyboard>
     <keybind key="W-L">
       <action name="Execute">
         <command>pactl set-sink-mute 0 toggle</command>
       </action>
     </keybind>
-	
-	<keybind key="W-L">
+    <keybind key="W-L">
       <action name="Execute">
         <command>slock</command>
       </action>
     </keybind>
-
-	<keybind key="A-F7">
-		<action name="Move"/>
-	</keybind>
-	 
-	  <!-- Keybindings for Media Keys -->
+    <keybind key="A-F7">
+      <action name="Move"/>
+    </keybind>
+    <!-- Keybindings for Media Keys -->
     <keybind key="XF86AudioMute">
       <action name="Execute">
         <command>pactl set-sink-mute 0 toggle</command>
@@ -224,7 +220,20 @@
       <action name="Execute">
         <command>playerctl next</command>
       </action>
-    </keybind>
+	</keybind>
+
+<!-- Enable brightness control
+	<keybind key="XF86MonBrightnessUp">
+		<action name="Execute">
+			<command>xbacklight +10</command>
+		</action>
+	</keybind>
+	<keybind key="XF86MonBrightnessDown">
+		<action name="Execute"> 
+			<command>xbacklight -10</command>
+	</action>
+	</keybind>
+-->
     <!--<keybind key="XF86AudioStop">
       <action name="Execute">
         <command>command to play/pause</command>
@@ -312,7 +321,7 @@
       <action name="FocusToBottom"/>
       <action name="Unfocus"/>
     </keybind>
-	<!-- <keybind key="A-space">
+    <!-- <keybind key="A-space">
       <action name="ShowMenu">
         <menu>client-menu</menu>
       </action>
@@ -329,7 +338,7 @@
         <command>mate-terminal</command>
       </action>
     </keybind>
-	<!-- Launch Rofi --> 
+    <!-- Launch Rofi -->
     <keybind key="A-space">
       <action name="Execute">
         <command>rofi -show run -hide-scrollbar -lines 5 -width 40 -theme /usr/share/rofi/themes/ArcDarkTransparent.rasi</command>
@@ -408,34 +417,31 @@
         <command>scrot</command>
       </action>
     </keybind>
-
     <keybind key="W-Left">
-        <action name="UnmaximizeFull"/>
-        <action name="MoveResizeTo">
-          <x>0</x>
-          <y>0</y>
-          <width>50%</width>
-          <height>100%</height>
-        </action>
+      <action name="UnmaximizeFull"/>
+      <action name="MoveResizeTo">
+        <x>0</x>
+        <y>0</y>
+        <width>50%</width>
+        <height>100%</height>
+      </action>
     </keybind>
     <keybind key="W-Right">
-        <action name="UnmaximizeFull"/>
-        <action name="MoveResizeTo">
-          <x>1/2</x>
-          <y>0</y>
-          <width>50%</width>
-          <height>100%</height>
-        </action>
+      <action name="UnmaximizeFull"/>
+      <action name="MoveResizeTo">
+        <x>1/2</x>
+        <y>0</y>
+        <width>50%</width>
+        <height>100%</height>
+      </action>
     </keybind>
     <keybind key="W-Down">
-        <action name="Iconify"/>
+      <action name="Iconify"/>
     </keybind>
     <keybind key="W-Up">
-        <action name="Maximize"/>
+      <action name="Maximize"/>
     </keybind>
-
   </keyboard>
-  
   <mouse>
     <dragThreshold>1</dragThreshold>
     <!-- number of pixels the mouse must move before a drag begins -->
