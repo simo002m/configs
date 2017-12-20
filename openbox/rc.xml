@@ -222,7 +222,7 @@
       </action>
 	</keybind>
 
-<!-- Enable brightness control
+<!-- Enable brightness control -->
 	<keybind key="XF86MonBrightnessUp">
 		<action name="Execute">
 			<command>xbacklight +10</command>
@@ -233,8 +233,8 @@
 			<command>xbacklight -10</command>
 	</action>
 	</keybind>
--->
-    <!--<keybind key="XF86AudioStop">
+	
+	<!--<keybind key="XF86AudioStop">
       <action name="Execute">
         <command>command to play/pause</command>
       </action>
