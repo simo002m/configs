@@ -5,7 +5,7 @@
 # Background definitions
 # ID 1
 rounded = 0
-border_width = 2
+border_width = -7
 background_color = #053a4d 255
 border_color = #053a4d 255
 
@@ -47,10 +47,10 @@ taskbar_active_background_id = 0
 
 # Tasks
 urgent_nb_of_blink = 8
-task_icon = 1
+task_icon = 0
 task_text = 1
 task_centered = 1
-task_maximum_size = 140 35
+task_maximum_size = 200 35
 task_padding = 6 2
 task_background_id = 3
 task_active_background_id = 2
