@@ -36,9 +36,9 @@ if [ -z "${debian_chroot:-}" ] && [ -r /etc/debian_chroot ]; then
 fi
 
 # set a fancy prompt (non-color, unless we know we "want" color)
-case "$TERM" in
-    xterm|xterm-color|*-256color) color_prompt=yes;;
-esac
+#case "$TERM" in
+#    xterm|xterm-color|*-256color) color_prompt=yes;;
+#esac
 
 # uncomment for a colored prompt, if the terminal has the capability; turned
 # off by default to not distract the user: the focus in a terminal window
@@ -131,4 +131,3 @@ alias pbpaste="xclip -selection clipboard -o" # paste from clipboard, ctrl+v, ct
 alias pbselect="xclip -selection primary -o" # paste from highlight, middle click, shift+insert
 
 alias tmux="TERM=screen-256color-bce tmux"
-alias spacemacs="emacs --insecure"
