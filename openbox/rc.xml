@@ -179,12 +179,7 @@
   <keyboard>
     <keybind key="W-L">
       <action name="Execute">
-        <command>pactl set-sink-mute 0 toggle</command>
-      </action>
-    </keybind>
-    <keybind key="W-L">
-      <action name="Execute">
-        <command>slock</command>
+		  <command>i3lock --clock -i ~/Wallpapers/material-mountains.jpg --timesize=40 --radius 100 --keyhlcolor=52002F99 --ringcolor=51003099 --insidecolor=00000000 --linecolor=00000000 --ringvercolor=05253099 --insidevercolor=00000000 --insidewrongcolor=00000000 --bshlcolor=ED423899</command>
       </action>
     </keybind>
     <keybind key="A-F7">
@@ -193,7 +188,7 @@
     <!-- Keybindings for Media Keys -->
     <keybind key="XF86AudioMute">
       <action name="Execute">
-        <command>pactl set-sink-mute 0 toggle</command>
+        <command>amixer set Master toggle</command>
       </action>
     </keybind>
     <keybind key="XF86AudioLowerVolume">
@@ -206,31 +201,49 @@
         <command>amixer set Master 5%+</command>
       </action>
     </keybind>
-    <keybind key="XF86AudioPlay">
+	
+	<keybind key="XF86AudioPlay">
       <action name="Execute">
         <command>playerctl play-pause</command>
       </action>
     </keybind>
-    <keybind key="XF86AudioPrev">
+	<keybind key="XF86AudioPlay">
+      <action name="Execute">
+        <command>cmus-remote --pause</command>
+      </action>
+    </keybind>
+	
+	<keybind key="XF86AudioPrev">
       <action name="Execute">
         <command>playerctl previous</command>
       </action>
     </keybind>
-    <keybind key="XF86AudioNext">
+    <keybind key="XF86AudioPrev">
+      <action name="Execute">
+        <command>cmus-remote --prev</command>
+      </action>
+    </keybind>
+	
+	<keybind key="XF86AudioNext">
       <action name="Execute">
         <command>playerctl next</command>
+      </action>
+	</keybind>
+    <keybind key="XF86AudioNext">
+      <action name="Execute">
+        <command>cmus-remote --next</command>
       </action>
 	</keybind>
 
 <!-- Enable brightness control -->
 	<keybind key="XF86MonBrightnessUp">
 		<action name="Execute">
-			<command>xbacklight +10</command>
+			<command>light -A 10</command>
 		</action>
 	</keybind>
 	<keybind key="XF86MonBrightnessDown">
 		<action name="Execute"> 
-			<command>xbacklight -10</command>
+			<command>light -U 10</command>
 	</action>
 	</keybind>
 	

@@ -8,11 +8,33 @@
 		</item>
 		<item label="Web browser">
 			<action name="Execute">
-				<execute>x-www-browser</execute>
+				<execute>chromium</execute>
 			</action>
 		</item>
+		<item label="File Manager">
+			<action name="Execute">
+				<execute>nemo</execute>
+			</action>
+		</item>
+		<separator/>
+		<menu id="root-menu-504527" label="Favorite programs">
+			<item label="Rhythmbox">
+				<action name="Execute">
+					<execute>rhythmbox</execute>
+				</action>
+			</item>
+			<item label="Gcolor2">
+				<action name="Execute">
+					<execute>gcolor2</execute>
+				</action>
+			</item>
+			<item label="Leafpad">
+				<action name="Execute">
+					<execute>leafpad</execute>
+				</action>
+			</item>
+		</menu>
 		<!-- This requires the presence of the 'menu' package to work -->
-		<menu id="/Debian"/>
 		<separator/>
 		<menu id="client-list-menu"/>
 		<separator/>
