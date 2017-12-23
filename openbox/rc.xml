@@ -176,10 +176,41 @@
     <moveButton>Middle</moveButton>
     <!-- 'Left', 'Middle', 'Right' -->
   </dock>
+  
   <keyboard>
-    <keybind key="W-L">
+  
+	<keybind key="W-2">
+  <action name="MoveResizeTo">
+    <!-- move the window to the second monitor -->
+    <monitor>2</monitor>
+  </action>
+</keybind>
+<keybind key="W-F10">
+  <action name="MoveResizeTo">
+    <!-- put the window in the bottom right corner -->
+    <x>-0</x>
+    <y>-0</y>
+  </action>
+</keybind>
+<keybind key="W-c">
+  <action name="MoveResizeTo">
+    <!-- center the window on the first monitor -->
+    <x>center</x>
+    <y>center</y>
+    <monitor>1</monitor>
+  </action>
+</keybind>
+<keybind key="C-A-1">
+  <action name="MoveResizeTo">
+    <!-- adjust a window's height -->
+    <width client="yes">1/2</width>
+    <height>300</height>
+  </action>
+</keybind>
+
+	  <keybind key="W-L">
       <action name="Execute">
-		  <command>i3lock --clock -i ~/Wallpapers/material-mountains.jpg --timesize=40 --radius 100 --keyhlcolor=52002F99 --ringcolor=51003099 --insidecolor=00000000 --linecolor=00000000 --ringvercolor=05253099 --insidevercolor=00000000 --insidewrongcolor=00000000 --bshlcolor=ED423899</command>
+        <command>i3lock --clock -i ~/Wallpapers/material-mountains.jpg --timesize=40 --radius 100 --keyhlcolor=52002F99 --ringcolor=51003099 --insidecolor=00000000 --linecolor=00000000 --ringvercolor=05253099 --insidevercolor=00000000 --insidewrongcolor=00000000 --bshlcolor=ED423899</command>
       </action>
     </keybind>
     <keybind key="A-F7">
@@ -201,19 +232,17 @@
         <command>amixer set Master 5%+</command>
       </action>
     </keybind>
-	
-	<keybind key="XF86AudioPlay">
+    <keybind key="XF86AudioPlay">
       <action name="Execute">
         <command>playerctl play-pause</command>
       </action>
     </keybind>
-	<keybind key="XF86AudioPlay">
+    <keybind key="XF86AudioPlay">
       <action name="Execute">
         <command>cmus-remote --pause</command>
       </action>
     </keybind>
-	
-	<keybind key="XF86AudioPrev">
+    <keybind key="XF86AudioPrev">
       <action name="Execute">
         <command>playerctl previous</command>
       </action>
@@ -223,31 +252,28 @@
         <command>cmus-remote --prev</command>
       </action>
     </keybind>
-	
-	<keybind key="XF86AudioNext">
+    <keybind key="XF86AudioNext">
       <action name="Execute">
         <command>playerctl next</command>
       </action>
-	</keybind>
+    </keybind>
     <keybind key="XF86AudioNext">
       <action name="Execute">
         <command>cmus-remote --next</command>
       </action>
-	</keybind>
-
-<!-- Enable brightness control -->
-	<keybind key="XF86MonBrightnessUp">
-		<action name="Execute">
-			<command>light -A 10</command>
-		</action>
-	</keybind>
-	<keybind key="XF86MonBrightnessDown">
-		<action name="Execute"> 
-			<command>light -U 10</command>
-	</action>
-	</keybind>
-	
-	<!--<keybind key="XF86AudioStop">
+    </keybind>
+    <!-- Enable brightness control -->
+    <keybind key="XF86MonBrightnessUp">
+      <action name="Execute">
+        <command>light -A 10</command>
+      </action>
+    </keybind>
+    <keybind key="XF86MonBrightnessDown">
+      <action name="Execute">
+        <command>light -U 10</command>
+      </action>
+    </keybind>
+    <!--<keybind key="XF86AudioStop">
       <action name="Execute">
         <command>command to play/pause</command>
       </action>
