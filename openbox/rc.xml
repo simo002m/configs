@@ -178,7 +178,17 @@
   </dock>
   
   <keyboard>
-  
+
+	<keybind key="W-Return">   <action name="ToggleMaximizeFull"/></keybind>
+	<keybind key="W-A-Return"> <action name="ToggleMaximizeVert"/></keybind>
+
+	<keybind key="W-A-Left">
+		<action name="MoveToEdge"><direction>west</direction></action>
+	</keybind>
+	<keybind key="W-A-Right">
+		<action name="MoveToEdge"><direction>west</direction></action>
+	</keybind>
+
 	<keybind key="W-2">
   <action name="MoveResizeTo">
     <!-- move the window to the second monitor -->
@@ -467,25 +477,31 @@
         <x>0</x>
         <y>0</y>
         <width>50%</width>
-        <height>100%</height>
+        <height>101%</height>
       </action>
     </keybind>
-    <keybind key="W-Right">
+	<keybind key="W-Right">
       <action name="UnmaximizeFull"/>
       <action name="MoveResizeTo">
         <x>1/2</x>
         <y>0</y>
         <width>50%</width>
-        <height>100%</height>
+        <height>101%</height>
       </action>
-    </keybind>
+	</keybind>
     <keybind key="W-Down">
       <action name="Iconify"/>
     </keybind>
     <keybind key="W-Up">
       <action name="Maximize"/>
     </keybind>
-  </keyboard>
+	
+	<keybind key="W-A-Down">
+      <action name="Restore"/>
+    </keybind>
+
+</keyboard>
+  
   <mouse>
     <dragThreshold>1</dragThreshold>
     <!-- number of pixels the mouse must move before a drag begins -->
