@@ -21,9 +21,9 @@ menu.title.text.color: #ffffff
 menu.title.text.justify: right
 
 menu.items.bg: flat solid
-menu.items.bg.color: #ffffff
+menu.items.bg.color: #053a4d
 menu.items.bg.border.color: #bbb8a9
-menu.items.text.color: #81807c
+menu.items.text.color: #ffffff
 menu.items.justify: left
 
 menu.items.disabled.text.color: #d7d7d7
@@ -31,8 +31,8 @@ menu.bullet.image.color: #053a4d
 menu.bullet.selected.image.color: #ffffff
 
 menu.items.active.bg: flat border
-menu.items.active.bg.color: #424242
-menu.items.active.bg.border.color: #424242
+menu.items.active.bg.color: #10687C
+menu.items.active.bg.border.color: #10687C
 menu.items.active.text.color: white
 
 !! fonts
