@@ -179,15 +179,42 @@
   
   <keyboard>
 
-	<keybind key="W-Return">   <action name="ToggleMaximizeFull"/></keybind>
-	<keybind key="W-A-Return"> <action name="ToggleMaximizeVert"/></keybind>
-
-	<keybind key="W-A-Left">
-		<action name="MoveToEdge"><direction>west</direction></action>
+	  <keybind key="W-A-Up">
+	<action name="MoveResizeTo">
+		<y>0</y>
+        <width>50%</width>
+        <height>50%</height>
+    </action>
+    </keybind>
+	<keybind key="W-A-Down">
+	<action name="MoveResizeTo">
+		<y>-0</y>
+        <width>50%</width>
+        <height>50%</height>
+	</action>
 	</keybind>
 	<keybind key="W-A-Right">
-		<action name="MoveToEdge"><direction>west</direction></action>
+	<action name="MoveResizeTo">
+		<x>-0</x>
+        <width>50%</width>
+        <height>50%</height>
+	</action>
 	</keybind>
+	<keybind key="W-A-Left">
+	<action name="MoveResizeTo">
+		<x>0</x>
+        <width>50%</width>
+        <height>50%</height>
+	</action>
+	</keybind>
+	
+	<keybind key="C-W-Up"><action name="MoveResizeTo"><y>0</y></action></keybind>
+	<keybind key="C-W-Down"><action name="MoveResizeTo"><y>-0</y></action></keybind>
+	<keybind key="C-W-Right"><action name="MoveResizeTo"><x>-0</x></action></keybind>
+	<keybind key="C-W-Left"><action name="MoveResizeTo"><x>0</x></action></keybind>
+
+	<keybind key="W-Return">   <action name="ToggleMaximizeFull"/></keybind>
+	<keybind key="W-A-Return"> <action name="ToggleMaximizeVert"/></keybind>
 
 	<keybind key="W-2">
   <action name="MoveResizeTo">
@@ -496,10 +523,6 @@
       <action name="Maximize"/>
     </keybind>
 	
-	<keybind key="W-A-Down">
-      <action name="Restore"/>
-    </keybind>
-
 </keyboard>
   
   <mouse>
