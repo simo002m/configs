@@ -183,7 +183,7 @@
 	<action name="MoveResizeTo">
 		<y>0</y>
         <width>50%</width>
-        <height>50%</height>
+        <height>55%</height>
     </action>
     </keybind>
 	<keybind key="W-A-Down">
