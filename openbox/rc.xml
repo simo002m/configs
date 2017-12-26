@@ -176,76 +176,90 @@
     <moveButton>Middle</moveButton>
     <!-- 'Left', 'Middle', 'Right' -->
   </dock>
-  
   <keyboard>
-
-	  <keybind key="W-A-Up">
-	<action name="MoveResizeTo">
-		<y>0</y>
+    <keybind key="W-A-Up">
+      <action name="MoveResizeTo">
+        <y>0</y>
         <width>50%</width>
         <height>55%</height>
-    </action>
+      </action>
     </keybind>
-	<keybind key="W-A-Down">
-	<action name="MoveResizeTo">
-		<y>-0</y>
+    <keybind key="W-A-Down">
+      <action name="MoveResizeTo">
+        <y>-0</y>
         <width>50%</width>
         <height>50%</height>
-	</action>
-	</keybind>
-	<keybind key="W-A-Right">
-	<action name="MoveResizeTo">
-		<x>-0</x>
+      </action>
+    </keybind>
+    <keybind key="W-A-Right">
+      <action name="MoveResizeTo">
+        <x>-0</x>
         <width>50%</width>
         <height>50%</height>
-	</action>
-	</keybind>
-	<keybind key="W-A-Left">
-	<action name="MoveResizeTo">
-		<x>0</x>
+      </action>
+    </keybind>
+    <keybind key="W-A-Left">
+      <action name="MoveResizeTo">
+        <x>0</x>
         <width>50%</width>
         <height>50%</height>
-	</action>
-	</keybind>
-	
-	<keybind key="C-W-Up"><action name="MoveResizeTo"><y>0</y></action></keybind>
-	<keybind key="C-W-Down"><action name="MoveResizeTo"><y>-0</y></action></keybind>
-	<keybind key="C-W-Right"><action name="MoveResizeTo"><x>-0</x></action></keybind>
-	<keybind key="C-W-Left"><action name="MoveResizeTo"><x>0</x></action></keybind>
-
-	<keybind key="W-Return">   <action name="ToggleMaximizeFull"/></keybind>
-	<keybind key="W-A-Return"> <action name="ToggleMaximizeVert"/></keybind>
-
-	<keybind key="W-2">
-  <action name="MoveResizeTo">
-    <!-- move the window to the second monitor -->
-    <monitor>2</monitor>
-  </action>
-</keybind>
-<keybind key="W-F10">
-  <action name="MoveResizeTo">
-    <!-- put the window in the bottom right corner -->
-    <x>-0</x>
-    <y>-0</y>
-  </action>
-</keybind>
-<keybind key="W-c">
-  <action name="MoveResizeTo">
-    <!-- center the window on the first monitor -->
-    <x>center</x>
-    <y>center</y>
-    <monitor>1</monitor>
-  </action>
-</keybind>
-<keybind key="C-A-1">
-  <action name="MoveResizeTo">
-    <!-- adjust a window's height -->
-    <width client="yes">1/2</width>
-    <height>300</height>
-  </action>
-</keybind>
-
-	  <keybind key="W-L">
+      </action>
+    </keybind>
+    <keybind key="C-W-Up">
+      <action name="MoveResizeTo">
+        <y>0</y>
+      </action>
+    </keybind>
+    <keybind key="C-W-Down">
+      <action name="MoveResizeTo">
+        <y>-0</y>
+      </action>
+    </keybind>
+    <keybind key="C-W-Right">
+      <action name="MoveResizeTo">
+        <x>-0</x>
+      </action>
+    </keybind>
+    <keybind key="C-W-Left">
+      <action name="MoveResizeTo">
+        <x>0</x>
+      </action>
+    </keybind>
+    <keybind key="W-Return">
+      <action name="ToggleMaximizeFull"/>
+    </keybind>
+    <keybind key="W-A-Return">
+      <action name="ToggleMaximizeVert"/>
+    </keybind>
+    <keybind key="W-2">
+      <action name="MoveResizeTo">
+        <!-- move the window to the second monitor -->
+        <monitor>2</monitor>
+      </action>
+    </keybind>
+    <keybind key="W-F10">
+      <action name="MoveResizeTo">
+        <!-- put the window in the bottom right corner -->
+        <x>-0</x>
+        <y>-0</y>
+      </action>
+    </keybind>
+    <keybind key="W-c">
+      <action name="MoveResizeTo">
+        <!-- center the window on the first monitor -->
+        <x>center</x>
+        <y>center</y>
+        <monitor>1</monitor>
+      </action>
+    </keybind>
+    <keybind key="C-A-1">
+      <action name="MoveResizeTo">
+        <!-- adjust a window's height -->
+        <width client="yes">1/2</width>
+        <height>300</height>
+      </action>
+    </keybind>
+    <keybind key="W-L">
       <action name="Execute">
         <command>i3lock --clock -i ~/Wallpapers/material-mountains.jpg --timesize=40 --radius 100 --keyhlcolor=52002F99 --ringcolor=51003099 --insidecolor=00000000 --linecolor=00000000 --ringvercolor=05253099 --insidevercolor=00000000 --insidewrongcolor=00000000 --bshlcolor=ED423899</command>
       </action>
@@ -507,7 +521,7 @@
         <height>101%</height>
       </action>
     </keybind>
-	<keybind key="W-Right">
+    <keybind key="W-Right">
       <action name="UnmaximizeFull"/>
       <action name="MoveResizeTo">
         <x>1/2</x>
@@ -515,16 +529,14 @@
         <width>50%</width>
         <height>101%</height>
       </action>
-	</keybind>
+    </keybind>
     <keybind key="W-Down">
       <action name="Iconify"/>
     </keybind>
     <keybind key="W-Up">
       <action name="Maximize"/>
     </keybind>
-	
-</keyboard>
-  
+  </keyboard>
   <mouse>
     <dragThreshold>1</dragThreshold>
     <!-- number of pixels the mouse must move before a drag begins -->

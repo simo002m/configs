@@ -1,4 +1,4 @@
 feh --bg-scale ~/Wallpapers/material-mountains.jpg
-compton -b
+compton -b config ~/.config/compton.conf
 tint2
 nm-applet
