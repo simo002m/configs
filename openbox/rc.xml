@@ -176,6 +176,7 @@
     <moveButton>Middle</moveButton>
     <!-- 'Left', 'Middle', 'Right' -->
   </dock>
+  
   <keyboard>
     <keybind key="W-A-Up">
       <action name="MoveResizeTo">
@@ -431,12 +432,18 @@
     <!-- Launch Rofi -->
     <keybind key="A-space">
       <action name="Execute">
-        <command>rofi -show drun -hide-scrollbar -lines 5 -width 40 -theme /usr/share/rofi/themes/ArcDarkTransparent.rasi</command>
+        <command>rofi -show drun -hide-scrollbar -lines 5 -width 40 -theme /usr/share/rofi/themes/solarized.rasi</command>
       </action>
     </keybind>
     <keybind key="W-space">
       <action name="Execute">
-        <command>rofi -show run -hide-scrollbar -lines 5 -width 40 -theme /usr/share/rofi/themes/ArcDarkTransparent.rasi</command>
+        <command>rofi -show run -hide-scrollbar -lines 5 -width 40 -theme /usr/share/rofi/themes/solarized.rasi</command>
+      </action>
+    </keybind>
+    <!-- Launch Pulse-->
+    <keybind key="C-A-P">
+      <action name="Execute">
+        <command>pavucontrol</command>
       </action>
     </keybind>
     <!-- Reload/restart OpenBox -->
