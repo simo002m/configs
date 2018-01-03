@@ -176,7 +176,6 @@
     <moveButton>Middle</moveButton>
     <!-- 'Left', 'Middle', 'Right' -->
   </dock>
-  
   <keyboard>
     <keybind key="W-A-Up">
       <action name="MoveResizeTo">
@@ -262,7 +261,7 @@
     </keybind>
     <keybind key="W-L">
       <action name="Execute">
-        <command>i3lock --clock -i ~/Wallpapers/material-mountains.jpg --timesize=40 --radius 100 --keyhlcolor=52002F99 --ringcolor=51003099 --insidecolor=00000000 --linecolor=00000000 --ringvercolor=05253099 --insidevercolor=00000000 --insidewrongcolor=00000000 --bshlcolor=ED423899</command>
+        <command>i3lock</command>
       </action>
     </keybind>
     <keybind key="A-F7">
