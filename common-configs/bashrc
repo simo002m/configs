@@ -124,6 +124,23 @@ if [ -x /usr/bin/mint-fortune ]; then
      /usr/bin/mint-fortune
 fi
 
+#=======Themes=======
+
+#Powerline
+#powerline-daemon -q
+#POWERLINE_BASH_CONTINUATION=1
+#POWERLINE_BASH_SELECT=1
+#. /usr/lib/python3.6/site-packages/powerline/bindings/bash/powerline.sh
+
+#Agnoster
+export THEME=$HOME/.bash/themes/agnoster-bash/agnoster.bash
+if [[ -f $THEME ]]; then
+    #export DEFAULT_USER=`whoami`
+    source $THEME
+fi
+
+#====================
+
 alias youtube-dl-mp3="youtube-dl --extract-audio --audio-format mp3"
 
 alias pbcopy="xclip -selection clipboard" # copy to clipboard, ctrl+c, ctrl+shift+c
