@@ -1,6 +1,5 @@
 feh --bg-scale ~/Wallpapers/material-mountains.jpg
 compton -b --config ~/.config/compton.conf
 ./autolock
-xss-lock -- i3lock --clock -i Wallpapers/material-mountains.jpg --timesize=40 --radius 100 --keyhlcolor=52002F99 --ringcolor=51003099 --insidecolor=00000000 --linecolor=00000000 --ringvercolor=05253099 --insidevercolor=00000000 --insidewrongcolor=00000000 --bshlcolor=ED423899
 tint2
 nm-applet
