@@ -176,6 +176,7 @@
     <moveButton>Middle</moveButton>
     <!-- 'Left', 'Middle', 'Right' -->
   </dock>
+  
   <keyboard>
     <keybind key="W-A-Up">
       <action name="MoveResizeTo">
@@ -422,21 +423,27 @@
         <command>scrot -s</command>
       </action>
     </keybind>
-    <!-- Launch mate-terminal -->
+	<!-- Launch mate-terminal -->
     <keybind key="C-A-T">
       <action name="Execute">
         <command>mate-terminal</command>
       </action>
     </keybind>
+	<!-- Launch mate-terminal -->
+    <keybind key="W-X">
+      <action name="Execute">
+        <command>xpad</command>
+      </action>
+    </keybind>
     <!-- Launch Rofi -->
     <keybind key="A-space">
       <action name="Execute">
-        <command>rofi -show drun -hide-scrollbar -lines 5 -width 40 -theme /usr/share/rofi/themes/solarized.rasi</command>
+        <command>rofi -show drun -hide-scrollbar -lines 5 -width 40 -theme /usr/share/rofi/themes/navy.rasi</command>
       </action>
     </keybind>
     <keybind key="W-space">
       <action name="Execute">
-        <command>rofi -show run -hide-scrollbar -lines 5 -width 40 -theme /usr/share/rofi/themes/solarized.rasi</command>
+        <command>rofi -show run -hide-scrollbar -lines 5 -width 40 -theme /usr/share/rofi/themes/navy.rasi</command>
       </action>
     </keybind>
     <!-- Launch Pulse-->
