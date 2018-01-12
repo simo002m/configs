@@ -262,7 +262,7 @@
     </keybind>
     <keybind key="W-L">
       <action name="Execute">
-        <command>i3lock</command>
+		  <command>i3lock --clock -i ~/Wallpapers/material-mountains.jpg --timesize=40 --radius 100 --keyhlcolor=52002F99 --ringcolor=51003099 --insidecolor=00000000 --linecolor=00000000 --ringvercolor=05253099 --insidevercolor=00000000 --insidewrongcolor=00000000 --bshlcolor=ED423899</command>
       </action>
     </keybind>
     <keybind key="A-F7">
@@ -423,6 +423,12 @@
         <command>scrot -s</command>
       </action>
     </keybind>
+	<!-- Launch Chromium -->
+    <keybind key="C-A-C">
+      <action name="Execute">
+        <command>chromium</command>
+      </action>
+    </keybind>
 	<!-- Launch mate-terminal -->
     <keybind key="C-A-T">
       <action name="Execute">
@@ -446,6 +452,11 @@
         <command>rofi -show run -hide-scrollbar -lines 5 -width 40 -theme /usr/share/rofi/themes/navy.rasi</command>
       </action>
     </keybind>
+    <keybind key="A-W">
+      <action name="Execute">
+        <command>rofi -show window -hide-scrollbar -lines 5 -width 40 -theme /usr/share/rofi/themes/navy.rasi</command>
+      </action>
+    </keybind>
     <!-- Launch Pulse-->
     <keybind key="C-A-P">
       <action name="Execute">
@@ -458,7 +469,7 @@
         <command>openbox --restart</command>
       </action>
     </keybind>
-    <!-- Keybindings for window switching -->
+	<!-- Keybindings for window switching -->
     <keybind key="A-Tab">
       <action name="NextWindow">
         <finalactions>
@@ -476,7 +487,7 @@
           <action name="Unshade"/>
         </finalactions>
       </action>
-    </keybind>
+	</keybind>
     <keybind key="C-A-Tab">
       <action name="NextWindow">
         <panels>yes</panels>
@@ -510,7 +521,7 @@
       </action>
     </keybind>
     <!-- Keybindings for running applications -->
-    <keybind key="W-e">
+	<!--<keybind key="W-e">
       <action name="Execute">
         <startupnotify>
           <enabled>true</enabled>
@@ -518,7 +529,7 @@
         </startupnotify>
         <command>kfmclient openProfile filemanagement</command>
       </action>
-    </keybind>
+	</keybind>-->
     <!-- Launch scrot when Print is pressed -->
     <keybind key="Print">
       <action name="Execute">

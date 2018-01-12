@@ -1,0 +1,31 @@
+set -g status-fg colour223
+set -g status-fg colour223
+set -g status-bg colour234
+set -g status-left-length 20
+set -g status-left '#[fg=colour16,bg=colour23,bold] #S #[fg=colour23,bg=colour234,nobold]'
+set -g status-right '#(eval tmux-airline `tmux display -p "#{client_width}"`)'
+set -g status-right-length 150
+
+set -g window-status-format "#[fg=colour244,bg=colour234]#I #[fg=colour240] #[default]#W "
+set -g window-status-current-format "#[fg=colour234,bg=colour23]#[fg=colour123,bg=colour23] #I  #[fg=colour223,bold]#W #[fg=colour23,bg=colour234,nobold]"
+
+set-window-option -g window-status-fg colour249
+set-window-option -g window-status-activity-attr none
+set-window-option -g window-status-bell-attr none
+set-window-option -g window-status-activity-fg yellow
+set-window-option -g window-status-bell-fg red
+set -g status-bg colour234
+set -g status-left-length 20
+set -g status-left '#[fg=colour16,bg=colour23,bold] #S #[fg=colour23,bg=colour234,nobold]'
+set -g status-right '#(eval tmux-airline `tmux display -p "#{client_width}"`)'
+set -g status-right-length 150
+
+set -g window-status-format "#[fg=colour244,bg=colour234]#I #[fg=colour240] #[default]#W "
+set -g window-status-current-format "#[fg=colour234,bg=colour23]#[fg=colour123,bg=colour23] #I  #[fg=colour223,bold]#W #[fg=colour23,bg=colour234,nobold]"
+set -g status-right "#[fg=colour234,bg=colour23]#[fg=colour23] #[fg=colour123,bold]%Y-%m-%d %H:%M#[fg=colour23,nobold] #[bg=colour234]#[fg=colour234] #[fg=green]#H"
+
+set-window-option -g window-status-fg colour249
+set-window-option -g window-status-activity-attr none
+set-window-option -g window-status-bell-attr none
+set-window-option -g window-status-activity-fg yellow
+set-window-option -g window-status-bell-fg red
