@@ -24,6 +24,8 @@ set number
 
 filetype plugin indent on
 
+map <F2> :NERDTreeToggle <CR>
+
 autocmd FileType python map <F5> :w !python3 <CR>
 autocmd FileType javascript map  <F5> :w !node <CR>
 autocmd FileType sh map <F5> :w !bash <CR>
